@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.logo img {
+  height: 60px;
+  margin-left: 43%;
+  margin-bottom: 40px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  margin-top: 10px;
+
+}
+.home{
+  background-color: #007bff;
+  color: #ddd;
+}
+.about:hover,
+.leave:hover,
+.piercing:hover,
+.contact:hover {
+  background-color: #007bff;
+  color: #f1f4f8;
+
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  position: relative;
+  font-weight: bold;
+
+  
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.button {
+  background-color: #e60b0b;
+  color: white;
+  padding: -2px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #4796CF;
+  border: 1px solid #ddd;
+  min-width: 200px;
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  display: block;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px;
+  color:#4796CF ;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #4796CF;
+  color: aliceblue;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
