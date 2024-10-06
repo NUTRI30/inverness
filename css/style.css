@@ -13,10 +13,10 @@ header {
   padding-top: 20px;
 }
 
-.logo img {
+.container-fluid .image {
   height: 60px;
-  margin-left: 43%;
-  margin-bottom: 40px;
+  margin-left: 5px;
+ 
 }
 
 .navbar {
@@ -44,7 +44,7 @@ header {
 nav ul {
   list-style-type: none;
   display: flex;
-  gap: 20px;
+  gap: 13px;
 }
 
 nav ul li {
@@ -53,7 +53,9 @@ nav ul li {
 
   
 }
-
+.d-flex{
+  gap:5px;
+}
 nav ul li a {
   text-decoration: none;
   color: #007bff;
@@ -75,7 +77,7 @@ nav ul li a {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #4796CF;
+  background-color:#eaf1f5;
   border: 1px solid #ddd;
   min-width: 200px;
   z-index: 1;
@@ -99,3 +101,134 @@ nav ul li a {
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+footer .company a{
+  text-decoration: none;
+  color: rgb(59, 54, 54);
+  
+}
+footer .support a{
+  text-decoration: none;
+  color: rgb(59, 54, 54);
+ 
+}
+footer .f-logo img{
+  width: 70%;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+footer .bottom-footer{
+  text-align: center;
+  margin-top: 20px;
+}
+ 
+footer .social-icons a:hover{
+  color: #c74949;
+
+
+}
+footer .social-icons a{
+  padding: 8px;
+  font-size: 20px;
+}
+footer .followus{
+  font-size: 26px;
+  color: rgb(59, 54, 54)
+}
+
+.sec-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  padding: 20px;
+  margin-top: 30px;
+  background-image:url(https://invernessegypt.com/img/about/piercing-bg.jpg);
+  background-size: contain;
+}
+
+/* Text block styling */
+.text-block {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.text-block h2 {
+  font-size: 2rem;
+  color: #3274b8; 
+  font-weight: bold;
+}
+
+.text-block p {
+  font-size: 1rem;
+  color: #333;
+  text-align: start;
+}
+
+/* Image grid styling */
+
+.image-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+  flex: 1;
+  max-width: 400px; 
+}
+.image-item img { 
+  width: 100%;
+  border-radius: 5px;
+}
+@media  (max-width: 768px) {
+  .sec-1 {
+    flex-direction: column; 
+  }
+
+  .text-block {
+    padding-right: 0;
+    text-align: start; 
+  }
+
+    .image-grid {
+      display: flex;
+      flex-wrap: nowrap; 
+      
+    }
+
+  .image-item img {
+    width: 80%; 
+    margin: 0 auto;
+  }
+}
+
+.aboutus {
+  background-image: url(https://invernessegypt.com/img/about/home_about.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #f1f4f8;
+  text-align: left;
+  margin-top: 50px;
+  padding-top: 30px;
+padding-left: 20px;
+padding-right: 20px;
+border-radius: 30px;
+font-size: 1.5rem;
+padding-bottom: 150px;
+}
+.aboutus button{
+  display: flex;
+  position: absolute;
+  background-color: #3274b8;
+  text-decoration: none;
+  border-radius: 30px;
+  color: #f1f4f8;
+  font-size: 1rem;
+  border-style: hidden;
+  padding: 15px 5%;
+  border: #0dcaf0;
+
+}
+.aboutus button:hover{
+  background-color: #0dcaf0;
+}
+
+
+
